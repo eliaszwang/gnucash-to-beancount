@@ -36,6 +36,12 @@ The tests are still primitives using `diff` with *golden files*. If
 
 If `test.sh` shows errors where dates are off by one, try using `test-west.sh` instead.
 
+Additional Notes
+----------------
+Make sure to save GnuCash file as SQLite, see `here <https://www.gnucash.org/docs/v4/C/gnucash-guide/basics-files1.html>`_.
+
+Also need to modify piecash for newer versions, see `here <https://github.com/sdementen/piecash/issues/126>`_.
+
 Known Limitations
 =================
 
