@@ -180,7 +180,7 @@ def price_for(split):
 
     try:
         number = abs(split.value / split.quantity) * data.Decimal('1.000000')
-    except InvalidOperation: # Skip "bad" transcations (split.value and quantity are 0)
+    except: # Skip "bad" transcations (split.value and quantity are 0)
         return None
     currency = commodity_name(txn_comm)
 
